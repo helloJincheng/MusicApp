@@ -11,8 +11,10 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "fastclick": "^1.0.6",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vux": "^2.7.9"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -56,11 +58,13 @@
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
+    "vux-loader": "^1.2.1",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.18.2",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "yaml-loader": "^0.5.0"
   },
   "engines": {
     "node": ">= 4.0.0",
