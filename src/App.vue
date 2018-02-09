@@ -1,25 +1,23 @@
 <template>
   <div id="app">
-    <router-view/>
+    <tab></tab>
+    <transition>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
+    </transition>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'app'
-}
+<script type="text/ecmascript-6">
+  import Tab from '@/components/tabs/tab'
+
+  export default {
+    components: {
+      Tab
+    }
+  }
 </script>
 
 <style lang="less" rel="stylesheet/less">
-  @import "./common/style/icon.less";
-  @import '~vux/src/styles/reset.less';
-
-  #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #ef0546;
-  margin-top: 60px;
-}
 </style>
