@@ -20,4 +20,8 @@
 </script>
 
 <style lang="less" rel="stylesheet/less">
+  @import './common/style/index.less';
+  #app{
+    height: 100%;
+  }
 </style>
